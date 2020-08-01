@@ -34,7 +34,7 @@ export default abstract class BaseAxiosApi extends BaseApi {
 
     private handleRequest() {
         this.axios.interceptors.request.use(
-            config => {
+            (config: AxiosRequestConfig) => {
                 config.url = this.path(config.url ?? "")
                 return config
             })
@@ -42,7 +42,7 @@ export default abstract class BaseAxiosApi extends BaseApi {
 
     private handleResponse() {
         this.axios.interceptors.response.use(
-            resp => {
+            (resp: AxiosResponse) => {
                 if (resp.status !== 200) {
                     const failResult = new FailResult(
                         resp.status.toString(),
