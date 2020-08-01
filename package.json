@@ -4,7 +4,7 @@
   "author": "iPotato",
   "license": "MIT",
   "files": [
-    "lib"
+    "src"
   ],
   "scripts": {
     "build": "yarn build:js && yarn build:types",
