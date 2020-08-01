@@ -1,0 +1,15 @@
+{
+  "name": "biz-ts",
+  "version": "1.0.0",
+  "author": "iPotato",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  },
+  "publishConfig": {
+    "registry": "http://mle5.mulaitek.cn:802/repository/npm-hosted/"
+  }
+}
