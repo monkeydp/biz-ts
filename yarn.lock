@@ -1981,6 +1981,16 @@ levn@^0.4.1:
     prelude-ls "^1.2.1"
     type-check "~0.4.0"
 
+lodash.get@^4.4.2:
+  version "4.4.2"
+  resolved "http://mle5.mulaitek.cn:802/repository/npm-group/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
+  integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
+
+lodash.set@^4.3.2:
+  version "4.3.2"
+  resolved "http://mle5.mulaitek.cn:802/repository/npm-group/lodash.set/-/lodash.set-4.3.2.tgz#d8757b1da807dde24816b0d6a84bea1a76230b23"
+  integrity sha1-2HV7HagH3eJIFrDWqEvqGnYjCyM=
+
 lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19:
   version "4.17.19"
   resolved "http://mle5.mulaitek.cn:802/repository/npm-group/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
@@ -2253,6 +2263,11 @@ readdirp@^2.2.1:
     graceful-fs "^4.1.11"
     micromatch "^3.1.10"
     readable-stream "^2.0.2"
+
+reflect-metadata@^0.1.13:
+  version "0.1.13"
+  resolved "http://mle5.mulaitek.cn:802/repository/npm-group/reflect-metadata/-/reflect-metadata-0.1.13.tgz#67ae3ca57c972a2aa1642b10fe363fe32d49dc08"
+  integrity sha1-Z648pXyXKiqhZCsQ/jY/4y1J3Ag=
 
 regenerate-unicode-properties@^8.2.0:
   version "8.2.0"
@@ -2587,6 +2602,13 @@ to-regex@^3.0.1, to-regex@^3.0.2:
     regex-not "^1.0.2"
     safe-regex "^1.1.0"
 
+tools-ts@^1.0.0:
+  version "1.0.0"
+  resolved "http://mle5.mulaitek.cn:802/repository/npm-group/tools-ts/-/tools-ts-1.0.0.tgz#d5e5fc962b33d3fb9ea9e4a6a82ae228740b33f7"
+  integrity sha512-ad8hn5B8cTx1b/vnn4rbHcGGbmKy19LWgSJv1vjlfTCCTP8Q7bZN95GX88B7lr/abEqvGSkZMHHmZLKocfKLEw==
+  dependencies:
+    typescript-ioc "^3.2.2"
+
 tslib@^1.8.1:
   version "1.13.0"
   resolved "http://mle5.mulaitek.cn:802/repository/npm-group/tslib/-/tslib-1.13.0.tgz#c881e13cc7015894ed914862d276436fa9a47043"
@@ -2610,6 +2632,15 @@ type-fest@^0.8.1:
   version "0.8.1"
   resolved "http://mle5.mulaitek.cn:802/repository/npm-group/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
   integrity sha1-CeJJ696FHTseSNJ8EFREZn8XuD0=
+
+typescript-ioc@^3.2.2:
+  version "3.2.2"
+  resolved "http://mle5.mulaitek.cn:802/repository/npm-group/typescript-ioc/-/typescript-ioc-3.2.2.tgz#5250a3691ea1d9425cbac22a44e8d6efb9584204"
+  integrity sha1-UlCjaR6h2UJcusIqROjW77lYQgQ=
+  dependencies:
+    lodash.get "^4.4.2"
+    lodash.set "^4.3.2"
+    reflect-metadata "^0.1.13"
 
 typescript@^3.9.7:
   version "3.9.7"
