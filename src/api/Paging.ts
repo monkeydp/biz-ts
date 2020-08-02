@@ -1,3 +1,6 @@
+export const DEFAULT_CURRENT_PAGE = 1
+export const DEFAULT_PAGE_SIZE = 10
+
 export default class Paging<T> {
     currentPage = DEFAULT_CURRENT_PAGE
     pageSize = DEFAULT_PAGE_SIZE
@@ -11,6 +14,3 @@ export interface PagingQueryForm {
     currentPage: number;
     pageSize: number;
 }
-
-export const DEFAULT_CURRENT_PAGE = 1
-export const DEFAULT_PAGE_SIZE = 10
