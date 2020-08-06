@@ -1,6 +1,6 @@
 {
   "name": "biz-ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "iPotato",
   "license": "MIT",
   "files": [
@@ -28,5 +28,8 @@
     "@typescript-eslint/parser": "^3.7.1",
     "eslint": "^7.6.0",
     "typescript": "^3.9.7"
+  },
+  "publishConfig": {
+    "registry": "http://mle5.mulaitek.cn:802/repository/npm-hosted/"
   }
 }
