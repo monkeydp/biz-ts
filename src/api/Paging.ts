@@ -14,3 +14,11 @@ export interface PagingQueryForm {
     currentPage: number;
     pageSize: number;
 }
+
+export abstract class BasePqForm implements PagingQueryForm {
+    currentPage = DEFAULT_CURRENT_PAGE
+    pageSize = DEFAULT_PAGE_SIZE
+}
+
+export class DefPqForm extends BasePqForm {
+}
