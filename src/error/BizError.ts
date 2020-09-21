@@ -4,7 +4,7 @@
 import {ErrorType} from "./ErrorType";
 
 export type BizError = Error & {
-    errorType: ErrorType;
+    errorType: string;
 }
 
 export class BaseBizError implements BizError {
@@ -34,7 +34,7 @@ export default function berror(
     throw new StdBizError(message, name, stack)
 }
 
-export function isBizError(obj: object): obj is BizError {
+export function isBizError(obj: unknown): obj is BizError {
     const bizError = obj as BizError;
-    return bizError.errorType == ErrorType.BIZ_ERROR
+    return bizError.errorType == "BIZ_ERROR"
 }
