@@ -1,4 +1,6 @@
 import _ from "lodash"
+import ValidError from "./ValidError";
+
 export class Result {
     readonly code!: string;
 
@@ -11,7 +13,7 @@ export class SuccessResult extends Result {
     /* eslint-disable  @typescript-eslint/no-explicit-any */
     readonly data: any;
 
-    constructor(code: string, data: any) {
+    constructor(code: string, data: unknown) {
         super(code);
         this.data = data;
     }
@@ -40,10 +42,3 @@ export class ArgsIllegalResult extends FailResult {
     }
 }
 
-class ValidError {
-    message!: string
-    cstrName!: string
-    objName!: string
-    propName!: string
-    illegalValue!: string
-}

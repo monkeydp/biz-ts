@@ -12,6 +12,7 @@
     "build:types": "tsc --emitDeclarationOnly"
   },
   "dependencies": {
+    "@types/lodash": "^4.14.161",
     "axios": "^0.19.2",
     "tools-ts": "^1.0.0"
   },
