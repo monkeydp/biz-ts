@@ -18,6 +18,10 @@ export interface PagingQueryForm {
 export abstract class BasePqForm implements PagingQueryForm {
     currentPage = DEFAULT_CURRENT_PAGE
     pageSize = DEFAULT_PAGE_SIZE
+
+    resetCurrentPage(): void {
+        this.currentPage = DEFAULT_CURRENT_PAGE
+    }
 }
 
 export class DefPqForm extends BasePqForm {
