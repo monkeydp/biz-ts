@@ -1,8 +1,8 @@
-import Where from "./Where";
+import Condition from "./Condition";
 import Sort from "./Sort";
 
 export default interface Query {
-    columns: Array<string>;
-    wheres: Array<Where>;
-    sorts: Array<Sort>;
+    properties: string[];
+    condition: Condition;
+    sort: Sort;
 }

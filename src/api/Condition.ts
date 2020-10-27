@@ -1,5 +1,17 @@
-export default interface Where {
-    column: string;
+export default interface Condition {
+    wheres: Where[];
+}
+
+export class ConditionBuilder {
+    static build(...wheres: Where[]): Condition {
+        return {
+            wheres: wheres
+        }
+    }
+}
+
+export interface Where {
+    property: string;
     operator: Operator;
     value: string;
 }
