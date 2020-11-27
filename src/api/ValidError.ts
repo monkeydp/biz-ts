@@ -4,4 +4,5 @@ export default class ValidError {
     objName!: string
     propName!: string
     illegalValue!: Array<unknown>
+
 }
