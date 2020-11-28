@@ -3,5 +3,5 @@ export default class ValidError {
     cstrName!: string
     objName!: string
     propName!: string
-    illegalValue!: Array<unknown>
+    illegalValue!: unknown
 }
