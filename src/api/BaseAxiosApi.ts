@@ -26,7 +26,7 @@ export default abstract class BaseAxiosApi extends BaseApi {
             case ResultCode.SUCCESS:
                 return new SuccessResult(code, resp.data.data)
             case ResultCode.ARGUMENT_ILLEGAL:
-                return new ArgsIllegalResult(code, resp.data.msg, resp.data.validErrors)
+                return new ArgsIllegalResult(code, resp.data.msg, resp.data.validErrorsMap)
             default:
                 return new FailResult(code, resp.data.msg)
         }

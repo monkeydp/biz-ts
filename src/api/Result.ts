@@ -29,16 +29,11 @@ export class FailResult extends Result {
 }
 
 export class ArgsIllegalResult extends FailResult {
-    readonly validErrors!: Array<ValidError>
+    readonly validErrorsMap!: Map<unknown, Array<ValidError>>
 
-    constructor(code: string, msg: string, validErrors: Array<ValidError>) {
+    constructor(code: string, msg: string, validErrorsMap: Map<unknown, Array<ValidError>>) {
         super(code, msg);
-        this.validErrors = validErrors;
-    }
-
-    errorMessagesOneLine(): string {
-        return _.map(this.validErrors, "message")
-            .join(", ")
+        this.validErrorsMap = validErrorsMap;
     }
 }
 
