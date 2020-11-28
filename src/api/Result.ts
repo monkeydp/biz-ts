@@ -1,4 +1,3 @@
-import _ from "lodash"
 import ValidError from "./ValidError";
 
 export class Result {
@@ -34,6 +33,13 @@ export class ArgsIllegalResult extends FailResult {
     constructor(code: string, msg: string, validErrorsMap: Map<unknown, Array<ValidError>>) {
         super(code, msg);
         this.validErrorsMap = validErrorsMap;
+    }
+
+    static from(raw: { code: string, msg: string, validErrorsMap: Map<unknown, Array<ValidError>> }): ArgsIllegalResult {
+        let errsMap = raw.validErrorsMap
+        if (errsMap.constructor.name == 'Object')
+            errsMap = new Map(Object.entries(errsMap))
+        return new ArgsIllegalResult(raw.code, raw.msg, errsMap)
     }
 }
 
