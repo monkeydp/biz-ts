@@ -2764,10 +2764,10 @@ to-regex@^3.0.1, to-regex@^3.0.2:
     regex-not "^1.0.2"
     safe-regex "^1.1.0"
 
-tools-ts@1.0.2:
-  version "1.0.2"
-  resolved "http://nexus.mulaitek.com/repository/npm-group/tools-ts/-/tools-ts-1.0.2.tgz#fe4f0aef109e686f34249c93a21668c968a05590"
-  integrity sha512-3eL3pAVpjrbuacPk+11c0ANBrA7Et+zowsUL0ORgXUA/iMZhFB20QQWcTCqnzDPJrML65pAnjrwh1wvmwzaACQ==
+tools-ts@1.0.3:
+  version "1.0.3"
+  resolved "http://nexus.mulaitek.com/repository/npm-group/tools-ts/-/tools-ts-1.0.3.tgz#a977af4b5cecf8c9e0f3c98d74b74f4698ffb7e8"
+  integrity sha512-jEZJTx4nVwDAxT4YbqP9vbCU+jyJwXzFrR3OqivRSTsMNrM1gWpzwJRrAyi4luY57+MwiFvMGXEl0LstsrKzSg==
   dependencies:
     "@types/lodash" "^4.14.161"
     lodash "^4.17.20"
