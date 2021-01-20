@@ -2,10 +2,9 @@
  * 业务异常会报给用户看
  */
 import {ErrorType} from "./ErrorType";
+import Errorable from "tools-ts/src/error/Errorable";
 
-export type BizError = Error & {
-    errorType: string;
-}
+export type BizError = Error & Errorable
 
 export class BaseBizError implements BizError {
     readonly message: string;
